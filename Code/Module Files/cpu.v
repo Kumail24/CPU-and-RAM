@@ -22,8 +22,6 @@ module cpu(
     wire ram_rd;
     wire ram_wr;
     wire [3:0] ram_addr;
-    //wire [7:0] ram_data_in;
-    //wire [7:0] ram_data_out;
            
     control_unit control (
         .clk(clk),
