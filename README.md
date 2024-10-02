@@ -7,7 +7,7 @@ Simple CPU and RAM simulated in Verilog to perform ALU, load and store to RAM op
   * RAM with 16 1-byte address slots.
   * Control Unit.
     
-All these components are wired together within the top-level module named 'CPU.v'.    
+All these components are wired together within the top-level module named 'cpu.v'.    
 # Types Of Operations
 
 The input contains 1 byte in the form of ABCD_EFGH.
@@ -25,7 +25,7 @@ The first 2 MSB (AB) will tell the control module what type of operation will be
     
   Example: Input Register == 8'b00101101.
   
-  Solution: perform an AND operation with the values from Registers 4 and 2.
+  Solution: perform an AND operation with the values from Registers 4 and 2 and store the result in register 4.
     
 ### If AB == 2b'01: Perform a 'Load from RAM' operation.
   * The value of CD refers to the register that the RAM's value will be sent to.
